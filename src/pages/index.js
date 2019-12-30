@@ -1,19 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Images from "../components/images"
 import SEO from "../components/seo"
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to my Gatsby site.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <p>Welcome to my Progressive Web App made with <a href="https://www.gatsbyjs.org" target='_blank'>Gatsby</a>.<br /> You can add it to your main screen and feel like a real app!</p>
+    <div>
+      <Images />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

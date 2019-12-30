@@ -1,0 +1,31 @@
+.masonry {
+  margin: 0 auto;
+  max-width: 100%;
+  column-gap: 15px;
+}
+
+.item {
+  margin: 0 0 10px;
+}
+
+.item img {
+  border-radius: 3px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+  .masonry {
+    column-count: 2;
+  }
+}
