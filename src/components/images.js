@@ -19,24 +19,15 @@ import img15 from '../images/img15.jpg'
 import img16 from '../images/img16.jpg'
 
 const Images = () => {
+  const imgs = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16];
+
   return(
     <div className='masonry'>
-      <div className='item'><img src={img1} alt='Img1' /></div>
-      <div className='item'><img src={img2} alt='Img2' /></div>
-      <div className='item'><img src={img3} alt='Img3' /></div>
-      <div className='item'><img src={img4} alt='Img4' /></div>
-      <div className='item'><img src={img9} alt='Img9' /></div>
-      <div className='item'><img src={img6} alt='Img6' /></div>
-      <div className='item'><img src={img7} alt='Img7' /></div>
-      <div className='item'><img src={img5} alt='Img5' /></div>
-      <div className='item'><img src={img10} alt='Img10' /></div>
-      <div className='item'><img src={img8} alt='Img8' /></div>
-      <div className='item'><img src={img11} alt='Img11' /></div>
-      <div className='item'><img src={img12} alt='Img12' /></div>
-      <div className='item'><img src={img13} alt='Img13' /></div>
-      <div className='item'><img src={img14} alt='Img14' /></div>
-      <div className='item'><img src={img15} alt='Img15' /></div>
-      <div className='item'><img src={img16} alt='Img16' /></div>
+      {imgs.map((item) =>
+        <div className='item'>
+          <img src={item} alt='Mountain image' />
+        </div>
+      )}
     </div>
   );
 }
